@@ -23,4 +23,5 @@ Optional Flags:
 Optional values will be filled out with defaults and existing files.
 Output will be set at the exe location.
 
-AniExport.exe -ani $(ProjectDir)test\data\attack\supers\armskip\loop.ani -pal $(ProjectDir)test\palettes\cerebella_5p.pal -gif -out $(ProjectDir)armskip_loop
+In this example $(ParentDir) is where the git project is located.
+AniExport.exe -ani $(ParentDir)test\data\attack\supers\armskip\loop.ani -pal $(ParentDir)test\palettes\cerebella_5p.pal -gif -out $(ParentDir)armskip_loop
