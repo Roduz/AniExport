@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AniExport">
+      <UniqueIdentifier>{21b0f160-7bba-46be-8ae6-4f0f8dac884d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AniExport\header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AniExport\source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AniExport\source\errors.cpp">
+      <Filter>AniExport\source</Filter>
+    </ClCompile>
+    <ClCompile Include="AniExport\source\gif_file.cpp">
+      <Filter>AniExport\source</Filter>
+    </ClCompile>
+    <ClCompile Include="AniExport\source\texture.cpp">
+      <Filter>AniExport\source</Filter>
+    </ClCompile>
+    <ClCompile Include="AniExport\source\pcx_file.cpp">
+      <Filter>AniExport\source</Filter>
+    </ClCompile>
+    <ClCompile Include="AniExport\source\png_file.cpp">
+      <Filter>AniExport\source</Filter>
+    </ClCompile>
+    <ClCompile Include="AniExport\main.cpp">
+      <Filter>AniExport</Filter>
+    </ClCompile>
+    <ClCompile Include="AniExport\source\palette.cpp">
+      <Filter>AniExport\source</Filter>
+    </ClCompile>
+    <ClCompile Include="AniExport\source\exporter.cpp">
+      <Filter>AniExport\source</Filter>
+    </ClCompile>
+    <ClCompile Include="AniExport\source\frame_reader.cpp">
+      <Filter>AniExport\source</Filter>
+    </ClCompile>
+    <ClCompile Include="AniExport\source\octree.cpp">
+      <Filter>AniExport\source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AniExport\header\errors.h">
+      <Filter>AniExport\header</Filter>
+    </ClInclude>
+    <ClInclude Include="AniExport\header\gif_file.h">
+      <Filter>AniExport\header</Filter>
+    </ClInclude>
+    <ClInclude Include="AniExport\header\texture.h">
+      <Filter>AniExport\header</Filter>
+    </ClInclude>
+    <ClInclude Include="AniExport\header\pcx_file.h">
+      <Filter>AniExport\header</Filter>
+    </ClInclude>
+    <ClInclude Include="AniExport\header\png_file.h">
+      <Filter>AniExport\header</Filter>
+    </ClInclude>
+    <ClInclude Include="AniExport\header\palette.h">
+      <Filter>AniExport\header</Filter>
+    </ClInclude>
+    <ClInclude Include="AniExport\header\timer.hpp">
+      <Filter>AniExport\header</Filter>
+    </ClInclude>
+    <ClInclude Include="AniExport\header\file_fun.hpp">
+      <Filter>AniExport\header</Filter>
+    </ClInclude>
+    <ClInclude Include="AniExport\header\rgba_fun.hpp">
+      <Filter>AniExport\header</Filter>
+    </ClInclude>
+    <ClInclude Include="AniExport\header\exporter.h">
+      <Filter>AniExport\header</Filter>
+    </ClInclude>
+    <ClInclude Include="AniExport\header\frame_reader.h">
+      <Filter>AniExport\header</Filter>
+    </ClInclude>
+    <ClInclude Include="AniExport\header\octree.h">
+      <Filter>AniExport\header</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>AniExport\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AniExport.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico" />
+  </ItemGroup>
+</Project>

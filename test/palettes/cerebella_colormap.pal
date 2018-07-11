@@ -1,0 +1,270 @@
+#CEREBELLA COLOR MAP:
+#Shadow: 253 200  92  130 46 26  # light, dark
+Shadow: 253 200  92  130 46 26  # light, dark
+198 entries
+#
+255 255 255 255 #background color
+#
+#hat skull
+0 0 0
+0 0 0
+255 254 152 # hat skull 0
+0 0 0
+0 0 0
+#
+#hat skull eyes
+0 0 0
+0 0 0
+255  46  46 # hat skull eyes 0
+0 0 0
+0 0 0
+#
+#hat main
+0 0 0
+0 0 0
+251 159  28 # hat main 0
+0 0 0
+0 0 0
+#
+#hat diamond
+0 0 0
+0 0 0
+ 92  63 160 # hat diamond 0
+0 0 0
+0 0 0
+#
+#hair
+0 0 0
+0 0 0
+ 55 190 163 # hair 0
+0 0 0
+0 0 0
+#
+#skin main (8 colors)
+0 0 0
+0 0 0
+0 0 0
+224 164 115 # skin main 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+#
+#eyelids
+0 0 0
+0 0 0
+ 87 163 249 # eyelids 0
+0 0 0
+0 0 0
+#
+#eye whites
+0 0 0
+0 0 0
+143 241 136 # eye whites 0
+0 0 0
+0 0 0
+#
+#iris
+0 0 0
+0 0 0
+168  55 255 # iris 0
+0 0 0
+0 0 0
+#
+#diamond tattoo
+0 0 0
+0 0 0
+141  41  44 # diamond tattoo 0
+0 0 0
+0 0 0
+#
+#lips
+0 0 0
+0 0 0
+131 114 255 # lips 0
+0 0 0
+0 0 0
+#
+#teeth
+0 0 0
+0 0 0
+  0 255 246 # teeth 0
+0 0 0
+0 0 0
+#
+#mouth
+0 0 0
+0 0 0
+255   0 222 # mouth 0
+0 0 0
+0 0 0
+#
+#neck strap
+0 0 0
+0 0 0
+ 61  38  72 # neck strap 0
+0 0 0
+0 0 0
+#
+#breast strap diamonds
+0 0 0
+0 0 0
+245 205  64 # breast strap diamonds 0
+0 0 0
+0 0 0
+#
+#breast strap main
+0 0 0
+0 0 0
+205   0 235 # breast strap main 0
+0 0 0
+0 0 0
+#
+#dress main (8 colors)
+0 0 0
+0 0 0
+0 0 0
+171 137 203 # dress main 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+#
+#dress middle (8 colors)
+0 0 0
+0 0 0
+0 0 0
+197  56 102 # dress middle 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+#
+#sleeves cloth (8 colors)
+0 0 0
+0 0 0
+0 0 0
+190 214 214 # sleeves cloth 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+#
+#sleeves strap
+0 0 0
+0 0 0
+129 126 179 # sleeves strap 0
+0 0 0
+0 0 0
+#
+#panties
+0 0 0
+0 0 0
+ 76 255 122 # panties 0
+0 0 0
+0 0 0
+#
+#skin thigh (8 colors)
+0 0 0
+0 0 0
+0 0 0
+135  73  23 # skin thigh 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+#
+#stockings diamond
+0 0 0
+0 0 0
+126 176  29 # stockings diamond 0
+0 0 0
+0 0 0
+#
+#stockings
+0 0 0
+0 0 0
+105  59 124 # stockings 0
+0 0 0
+0 0 0
+#
+#shoes skull
+0 0 0
+0 0 0
+255 175 254 # shoes skull 0
+0 0 0
+0 0 0
+#
+#shoes skull eyes
+0 0 0
+0 0 0
+ 50  93  87 # shoes skull eyes 0
+0 0 0
+0 0 0
+#
+#skin hand (8 colors)
+0 0 0
+0 0 0
+0 0 0
+ 27 250  54 # skin hand 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+#
+#finger nails
+0 0 0
+0 0 0
+250 117 255 # finger nails 0
+0 0 0
+0 0 0
+#
+#wristband
+0 0 0
+0 0 0
+ 44  44  44 # wristband 0
+0 0 0
+0 0 0
+#
+#knives
+0 0 0
+0 0 0
+ 233 166 166 # knives
+0 0 0
+0 0 0
+#drool
+0 0 0
+0 0 0
+252 249 227 # drool
+0 0 0
+0 0 0
+#blush
+0 0 0
+0 0 0
+255 220 232 # blush
+0 0 0
+0 0 0
+#coal (for super)
+0 156 255
+0 0 0
+#diamond (for super)
+0 0 0
+0 0 0
+255 246 0
+0 0 0
+0 0 0
+#cat (for Lock'n'Load)
+255 0 255
+#debris
+0 42 255
+0 0 0
+#catball (for Lock'n'Load)
+255 255 0
+#sparkle trail
+0 0 0
+0 0 0
+0 0 0
+89 189 89
+0 0 0
+0 0 0
+0 0 0

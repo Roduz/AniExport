@@ -1,0 +1,40 @@
+198 colors
+Light: 1  background  # must have lighting applied in case of overlap!
+Light: 5  hat skull
+Light: 5  hat skull eyes
+Light: 5  hat main
+Light: 5  hat diamond
+Light: 5  hair
+Light: 8  skin main # (8 colors)
+Light: 5  eyelids
+NoLight: 5  eye whites
+NoLight: 5  eye iris
+Light: 5  diamond tattoo
+Light: 5  lips
+Light: 5  teeth
+Light: 5  mouth
+Light: 5  neck strap
+Light: 5  breast strap diamonds
+Light: 5  breast strap main
+Light: 8  dress main # (8 colors)
+Light: 8  dress middle # (8 colors)
+Light: 8  sleeves cloth # (8 colors)
+Light: 5  sleeves strap
+Light: 5  panties
+Light: 8  skin thigh # (8 colors)
+Light: 5  stockings diamond
+Light: 5  stockings
+Light: 5  shoes skull
+Light: 5  shoes skull eyes
+Light: 8  skin hand # (8 colors)
+Light: 5  fingernails
+Light: 5  wristband
+Light: 5  knives
+Light: 5  drool
+Light: 5  blush
+Light: 2  coal
+Light: 5  diamond(super)
+Light: 1  neko (Lock'n'Load)
+NoLight: 2  debris
+Light: 1  nekoball (Lock'n'Load)
+NoLight: 8  sparkletrail

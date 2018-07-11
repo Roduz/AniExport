@@ -1,0 +1,155 @@
+Frames:
+  frames/stabbingpeach01_colors
+  frames/stabbingpeach02_colors
+  frames/stabbingpeach03_colors
+  frames/stabbingpeach04_colors
+  frames/stabbingpeach05_colors
+  frames/stabbingpeach06_colors
+  frames/stabbingpeach07_colors
+  frames/stabbingpeach08_colors
+  frames/stabbingpeach09_colors
+  frames/stabbingpeach10_colors
+[end]
+
+AllFrames: 
+  BlockType = None
+  PhysicsType = PhysicsGround
+  YVel = 0
+[end]
+
+Order:
+  Frame:
+    Skipped = 1
+    EndHit
+    CounterHit = 1
+
+    DHCNum = 1 IfZero SuperFlash  # if this is not a DHC, reset DHCNum
+
+    PhysicsType = PhysicsGround
+    YVel = 0
+    XVel *= 1/4
+
+    FacingDir = FacingToEnemy
+    
+    SFX: StopVO
+  [end]
+  Frame:
+    Number: 1
+    Repeats: 3
+    Invincible = AllHits
+  [end]
+  Frame:
+    Number: 2
+    Repeats: 2
+    Invincible = AllHits
+  [end]
+  Frame:
+    Number: 3
+    Repeats: 3
+    Invincible = AllHits
+  [end]
+  Frame:
+    Skipped = 1
+    SFX: GenericWhooshSmall
+    SFX: PeachVO
+  [end]
+  Frame:
+    Number: 4
+    Repeats: 3
+    Invincible = AllHits
+  [end]
+  Frame:
+    Number: 5
+    Repeats: 2
+    Invincible = AllHits
+  [end]
+
+  Frame:
+    Skipped = 1
+    SuperFlash = 1 IfZero SuperFlash
+    SuperShadows = 1
+    PT.SuperBar -= 100
+  [end]
+
+  Frame:
+    Number: 6
+    Repeats: 15
+    Invincible = AllHits
+  [end]
+  Frame:
+    Number: 7
+    Repeats: 6
+    Invincible = AllHits
+  [end]
+  Frame:
+    Number: 8
+    Repeats: 6
+    Invincible = AllHits
+  [end]
+  Frame:
+    Number: 9
+    Repeats: 6
+    Invincible = AllHits
+  [end]
+  
+  Frame:
+    Skipped = 1
+    SuperFlash = 0
+  [end]
+  
+  Frame:
+    Number: 10
+    Repeats: 3
+    Invincible = AllHits
+  [end]
+  Frame:
+    Skipped = 1
+    SFX: StabbingPeach
+  [end]
+  Frame:
+    Skipped = 1
+    PhysicsType = PhysicsAir
+    
+    XVel = 35
+    YVel = 24
+    
+    Slot0 = 1  # landing noise flag
+    
+    NewHit: 
+      Type: MidHit
+      Spark: 3
+	  SoundHash: "Hard"
+      Damage: 2100
+      Pause: 11
+      Hitstun: 20
+      Meter: 100/24
+      Ground:
+        PhysicsType = PhysicsAir
+        YVel = 20
+        XVel = A.XVel * -1
+
+	#HitStun = 14 IfNonZero Blocked
+	
+	AnimHint = KnockdownAnim
+	
+        Pushback = 7
+        PushbackTime = 3
+        PushbackDelta = -1
+      [end]
+      Air:
+        PhysicsType = PhysicsAir
+        YVel = 20
+        XVel = A.XVel * -1
+
+	#HitStun = 14 IfNonZero Blocked
+	
+	AnimHint = KnockdownAnim
+	
+        Pushback = 7
+        PushbackTime = 3
+        PushbackDelta = -1
+      [end]
+    [end] 
+
+  [end]
+[end]

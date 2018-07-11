@@ -1,0 +1,27 @@
+new hits on b, f, j, n
+
+armskip01 - (774, 1319) [4]
+armskip02 - (774, 1319) [8]
+armskip03 - (774, 1319) [8]
+armskip04 - (774, 1319) [8]
+armskip05 - (774, 1319) [6]
+armskip06 - (774, 1319) [14]
+armskip07a - (774, 1319) [4]
+armskip07b - (774, 1319) [4] # hit (2)
+armskip07c - (774, 1319) [4]
+armskip07d - (774, 1319) [4]
+armskip07e - (774, 1319) [4]
+armskip07f - (774, 1319) [4] # hit (6)
+armskip07g - (774, 1319) [4]
+armskip07h - (774, 1319) [4]
+armskip07i - (774, 1319) [4]
+armskip07j - (774, 1319) [4] # hit (10)
+armskip07k - (774, 1319) [4]
+armskip07l - (774, 1319) [4]
+armskip07m - (774, 1319) [4]
+armskip07n - (774, 1319) [4] # hit (14)
+armskip07o - (774, 1319) [4]
+armskip07p - (774, 1319) [4]
+armskip08 - (774, 1319) [12]
+armskip09 - (774, 1319) [16]
+armskip10 - (774, 1319) [10]

@@ -1,0 +1,339 @@
+Frames:
+  frames/armskip10_colors
+  frames/armskip11_colors
+  frames/armskip12_colors
+  frames/armskip13_colors
+  frames/armskip14_colors
+  frames/armskip15_colors
+  frames/armskip16_colors
+  frames/armskip17_colors
+  frames/armskip18_colors
+  frames/armskip19_colors
+  frames/armskip20_colors
+  frames/armskip21_colors
+  frames/armskip22_colors
+  frames/armskip23_colors
+  frames/armskip24_colors
+  frames/armskip25_colors
+  frames/armskip11_1_colors  # first hit frame, needs different hitboxes
+[end]
+
+AllFrames: 
+  BlockType = None
+
+  XVel = Slot2
+
+  # invincibility at startup
+  Invincible = AllHits IfNonZero Slot0
+  Slot0 -= 1
+  Slot0 = Slot0 Max 0
+[end]
+
+Order:
+  Frame:
+    Skipped = 1
+    PhysicsType = PhysicsGround
+    CounterHit = 1
+  [end]
+  Frame:
+    Number: 1
+    Repeats: 3
+  [end]
+  Frame:
+    Skipped = 1
+
+    SFX: ArmSwingWoosh
+    
+    # new middle hit if we're in the middle
+    # regular hit, for the loops
+    NewHit:  
+      Type: MidHit
+      Spark: 2
+      SoundHash: "Medium"
+      Damage: 300
+      Chip: 80
+      Pause: 3
+      Hitstun: 30
+      Ground:
+        CamShake = CamShakeTiny
+
+	PhysicsType = PhysicsAir
+	# if we are behind them, speed us up a lot!
+        XVel = A.XVel * -1
+        XVel -= 4
+        YVel = -22
+	AnimHint = FloorBounceAnim
+      [end]
+      Air:
+        CamShake = CamShakeTiny
+
+	PhysicsType = PhysicsAir
+	# if we are behind them, speed us up a lot!
+        XVel = A.XVel * -1
+        XVel -= 4
+        YVel = -22
+	AnimHint = FloorBounceAnim
+      [end]
+    [end]     
+    
+    Modifier: X+Flag0+BetaExperimentOK  # on the first loop, a bit different hit, can only hit point char
+      NewHit:  
+        Type: MidHit
+        Spark: 2
+  	SoundHash: "Medium"
+        Damage: 300
+        Chip: 80
+        Pause: 3
+        Hitstun: 30
+        THACO:  IsPoint  # can only hit the point character during hitstop
+        Ground:
+          CamShake = CamShakeTiny
+
+          PhysicsType = PhysicsAir
+          # if we are behind them, speed us up a lot!
+          XVel = A.XVel * -1
+          XVel -= 4
+          YVel = -22
+          AnimHint = FloorBounceAnim
+        [end]
+        Air:
+          CamShake = CamShakeTiny
+
+          PhysicsType = PhysicsAir
+          # if we are behind them, speed us up a lot!
+          XVel = A.XVel * -1
+          XVel -= 4
+          YVel = -22
+          AnimHint = FloorBounceAnim
+        [end]
+      [end]  # hit   
+    [end]  # modifier        
+  [end]
+  Frame:
+    Number: 2
+    Repeats: 2
+    
+    Skipped = 1 IfNonZero Flag0  # on the first loop, skip this
+    Skipped = 0 IfZero BetaExperimentOK  # only in the beta!
+  [end]
+  Frame:
+    Number: 17
+    Repeats: 2
+    
+    Skipped = 1 IfZero Flag0  # after the first loop, skip this
+    Skipped = 1 IfZero BetaExperimentOK  # only shown in the beta!
+  [end]
+  Frame:
+    Skipped = 1
+    
+    Modifier: X+Flag0+NumTouches<=0+BetaExperimentOK  # on the first loop a bit different, make a regular hit if we didn't hit the point char yet
+      NewHit:  
+        Type: MidHit
+        Spark: 2
+  	SoundHash: "Medium"
+        Damage: 300
+        Chip: 80
+        Pause: 3
+        Hitstun: 30
+        Ground:
+          CamShake = CamShakeTiny
+
+          PhysicsType = PhysicsAir
+          # if we are behind them, speed us up a lot!
+          XVel = A.XVel * -1
+          XVel -= 4
+          YVel = -22
+          AnimHint = FloorBounceAnim
+        [end]
+        Air:
+          CamShake = CamShakeTiny
+
+          PhysicsType = PhysicsAir
+          # if we are behind them, speed us up a lot!
+          XVel = A.XVel * -1
+          XVel -= 4
+          YVel = -22
+          AnimHint = FloorBounceAnim
+        [end]
+      [end]  # hit   
+    [end]  # modifier
+  [end]
+  Frame:
+    Number: 2
+    Repeats: 2
+  [end]
+  Frame:
+    Number: 3
+    Repeats: 3
+  [end]
+  Frame:
+    Number: 4
+    Repeats: 4
+  [end]
+  Frame:
+    Number: 5
+    Repeats: 3
+  [end]
+  Frame:
+    Skipped = 1
+
+    SFX: ArmSwingWoosh
+    
+    # new middle hit if we're in the middle
+    # regular hit, for the loops
+    NewHit:  
+      Type: MidHit
+      Spark: 2
+      SoundHash: "Medium"
+      Damage: 300
+      Chip: 80
+      Pause: 3
+      Hitstun: 30
+      Ground:
+        CamShake = CamShakeTiny
+
+	PhysicsType = PhysicsAir
+	# if we are behind them, speed us up a lot!
+        XVel = A.XVel * -1
+        XVel -= 4
+        YVel = -22
+	AnimHint = FloorBounceAnim
+      [end]
+      Air:
+        CamShake = CamShakeTiny
+
+	PhysicsType = PhysicsAir
+	# if we are behind them, speed us up a lot!
+        XVel = A.XVel * -1
+        XVel -= 4
+        YVel = -22
+	AnimHint = FloorBounceAnim
+      [end]
+    [end]     
+  [end]
+  Frame:
+    Number: 6
+    Repeats: 4
+  [end]
+  Frame:
+    Number: 7
+    Repeats: 3
+  [end]
+  Frame:
+    Number: 8
+    Repeats: 4
+  [end]
+  Frame:
+    Number: 9
+    Repeats: 3
+  [end]
+  Frame:
+    Skipped = 1
+
+    SFX: ArmSwingWoosh
+    
+    # new middle hit if we're in the middle
+    # regular hit, for the loops
+    NewHit:  
+      Type: MidHit
+      Spark: 2
+      SoundHash: "Medium"
+      Damage: 300
+      Chip: 80
+      Pause: 3
+      Hitstun: 30
+      Ground:
+        CamShake = CamShakeTiny
+
+	PhysicsType = PhysicsAir
+	# if we are behind them, speed us up a lot!
+        XVel = A.XVel * -1
+        XVel -= 4
+        YVel = -22
+	AnimHint = FloorBounceAnim
+      [end]
+      Air:
+        CamShake = CamShakeTiny
+
+	PhysicsType = PhysicsAir
+	# if we are behind them, speed us up a lot!
+        XVel = A.XVel * -1
+        XVel -= 4
+        YVel = -22
+	AnimHint = FloorBounceAnim
+      [end]
+    [end]     
+  [end]
+  Frame:
+    Number: 10
+    Repeats: 4
+  [end]
+  Frame:
+    Number: 11
+    Repeats: 3
+  [end]
+  Frame:
+    Number: 12
+    Repeats: 4
+  [end]
+  Frame:
+    Number: 13
+    Repeats: 3
+  [end]
+  Frame:
+    Skipped = 1
+
+    SFX: ArmSwingWoosh
+    
+    # new middle hit if we're in the middle
+    # regular hit, for the loops
+    NewHit:  
+      Type: MidHit
+      Spark: 2
+      SoundHash: "Medium"
+      Damage: 300
+      Chip: 80
+      Pause: 3
+      Hitstun: 30
+      Ground:
+        CamShake = CamShakeTiny
+
+	PhysicsType = PhysicsAir
+	# if we are behind them, speed us up a lot!
+        XVel = A.XVel * -1
+        XVel -= 4
+        YVel = -22
+	AnimHint = FloorBounceAnim
+      [end]
+      Air:
+        CamShake = CamShakeTiny
+
+	PhysicsType = PhysicsAir
+	# if we are behind them, speed us up a lot!
+        XVel = A.XVel * -1
+        XVel -= 4
+        YVel = -22
+	AnimHint = FloorBounceAnim
+      [end]
+    [end]     
+  [end]
+  Frame:
+    Number: 14
+    Repeats: 4
+  [end]
+  Frame:
+    Number: 15
+    Repeats: 3
+  [end]
+  Frame:
+    Number: 16
+    Repeats: 4
+  [end]
+  Frame:
+    Skipped = 1
+    Slot1 -= 1
+    Slot1 = Slot1 Max 0
+    
+    Flag0 = 0  # no longer first loop
+  [end]
+[end]

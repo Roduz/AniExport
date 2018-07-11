@@ -1,0 +1,94 @@
+Frames:
+  frames/stabbingpeach15_colors
+  frames/stabbingpeach16_colors
+  frames/stabbingpeach17_colors
+  frames/stabbingpeach18_colors
+  frames/stabbingpeach19_colors
+  frames/stabbingpeach20_colors
+  frames/stabbingpeach21_colors
+  frames/stabbingpeach22_colors
+  frames/stabbingpeach23_colors
+  frames/stabbingpeach24_colors
+  frames/stabbingpeach25_colors
+  frames/stabbingpeach26_colors
+[end]
+
+AllFrames: 
+  BlockType = None
+  PhysicsType = PhysicsGround
+  YVel = 0
+[end]
+
+# 39f
+
+Order:
+  Frame:
+    Skipped = 1
+    CounterHit = 1
+    CancelOK = 0
+  [end]
+  Frame:
+    Number: 1
+    Repeats: 3
+  [end]
+  Frame:
+    Number: 2
+    Repeats: 7
+  [end]
+  Frame:
+    Number: 3
+    Repeats: 4
+  [end]
+  Frame:
+    Number: 4
+    Repeats: 4
+  [end]
+  Frame:
+    Skipped = 1
+    XPos -= 20
+  [end]
+  Frame:
+    Number: 5
+    Repeats: 4
+  [end]
+  Frame:
+    Skipped = 1
+    XPos -= 20
+  [end]
+  Frame:
+    Number: 6
+    Repeats: 4
+  [end]
+  Frame:
+    Skipped = 1
+    XPos -= 20
+  [end]
+  Frame:
+    Number: 7
+    Repeats: 3
+  [end]
+  Frame:
+    Skipped = 1
+    XPos -= 20
+  [end]
+  Frame:
+    Number: 8
+    Repeats: 4
+  [end]
+  Frame:
+    Number: 9
+    Repeats: 4
+  [end]
+  Frame:
+    Number: 10
+    Repeats: 4
+  [end]
+  Frame:
+    Number: 11
+    Repeats: 3
+  [end]
+  Frame:
+    Number: 12
+    Repeats: 4
+  [end]
+[end]

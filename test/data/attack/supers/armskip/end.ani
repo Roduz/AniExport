@@ -1,0 +1,141 @@
+Frames:
+  frames/armskip26_colors
+  frames/armskip27_colors
+  frames/armskip28_colors
+  frames/armskip29_colors
+  frames/armskip30_colors
+  frames/armskip31_colors
+  frames/armskip32_colors
+  frames/armskip33_colors
+[end]
+
+AllFrames:
+  BlockType = None
+[end]
+
+# 45f
+
+Order:
+  Frame:
+    Skipped = 1
+    EndHit
+    PhysicsType = PhysicsGround
+    CounterHit = 1
+  [end]
+  
+  Frame:
+    Number: 1
+    Repeats: 6
+  [end]  
+  Frame:
+    Skipped = 1
+    SFX: ArmSwingFinalHit
+  [end]
+  Frame:
+    Number: 2
+    Repeats: 5
+  [end]  
+  Frame:
+    Number: 3
+    Repeats: 2
+  [end]  
+
+  Frame:
+    Skipped = 1
+
+    CamShake = CamShakeHard
+    
+    NewHit:  
+      Type: MidHit
+      Spark: 4
+          SoundHash: "Special"
+      Damage: 2100
+      Chip: 200
+      Pause: 17
+      Hitstun: 22
+      Ground:   
+        PhysicsType = PhysicsAir
+
+        A.HitPause = 27 IfZero Blocked
+
+        # if we are behind them, speed us up a lot!
+        XVel = -5
+        YVel = -21 + 1/3
+        YVel *= Weight
+        AnimHint = FloorBounceAnim
+      [end]
+      Air:
+        PhysicsType = PhysicsAir
+
+        A.HitPause = 27 IfZero Blocked
+
+        # if we are behind them, speed us up a lot!
+        XVel = -5
+        YVel = -21 + 1/3
+        YVel *= Weight
+        AnimHint = FloorBounceAnim
+      [end]
+    [end] 
+    
+  [end]
+  Frame:
+    Skipped = 1
+    
+    FakeSpark = 130 #superthrowdust
+    FakeSparkX = 175
+    FakeSparkY = 0
+  [end]
+  Frame:
+    Skipped = 1
+
+    # Floor impact
+    FakeSpark = 120  # nondenominational floor impact
+    FakeSparkX = 260
+    FakeSparkY = 0
+  [end]
+  Frame:
+    Number: 4
+    Repeats: 6
+  [end]
+  Frame:
+    Skipped = 1
+    EndHit
+  [end]
+  Frame:
+    Number: 4
+    Repeats: 5
+  [end]
+  Frame:
+    Skipped = 1
+    SuperShadows = 0
+    EndHit
+  [end]
+  Frame:
+    Number: 4
+    Repeats: 27
+  [end]
+  Frame:
+    Number: 5
+    Repeats: 8
+  [end]
+  Frame:
+    Number: 6
+    Repeats: 5
+  [end]
+  Frame:
+    Number: 7
+    Repeats: 5
+  [end]
+  Frame:
+    Number: 8
+    Repeats: 4
+  [end]
+  Frame:
+    Skipped = 1
+    
+    # if we hit, and were not blocked, can't dash for a bit
+    Modifier: X+NumHits=NumTouches+NumHits>0
+      AirDashLockout = 13
+    [end]
+  [end]
+[end]

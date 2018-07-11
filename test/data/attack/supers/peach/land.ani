@@ -1,0 +1,42 @@
+Frames:
+  frames/stabbingpeach14a_colors
+  frames/stabbingpeach14b_colors
+  frames/stabbingpeach14c_colors
+[end]
+
+AllFrames: 
+  BlockType = None
+  PhysicsType = PhysicsGround
+  YVel = 0
+  
+  Modifier: X+XVel<12
+    EndHit
+    CancelOK = 0
+  [end]
+[end]
+
+Order:
+  Frame:
+    Skipped = 1
+    CounterHit = 1
+    
+    SuperShadows = 0
+
+    Modifier: X+Slot0
+      Slot0 = 0
+      SFX: FloorImpactSmallVO
+    [end]
+  [end]
+  Frame:
+    Number: 1
+    Repeats: 3
+  [end]
+  Frame:
+    Number: 2
+    Repeats: 3
+  [end]
+  Frame:
+    Number: 3
+    Repeats: 3
+  [end]
+[end]

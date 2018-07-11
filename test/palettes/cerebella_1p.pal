@@ -1,0 +1,242 @@
+# Cerebella 1p palette
+#
+Shadow:  253 200 92   130 46 26  # light, dark
+#
+198 entries
+#
+  0   0   0   0  #  background (band 0), color 0 (index 0)
+#
+251 244 213  #  hat skull (band 1), color 0 (index 1)
+251 244 213  #  hat skull (band 1), color 1 (index 2)
+251 244 213  #  hat skull (band 1), color 2 (index 3)
+187 174 106  #  hat skull (band 1), color 3 (index 4)
+117 102  80  #  hat skull (band 1), color 4 (index 5)
+#
+100  92 130  #  hat skull eyes (band 2), color 0 (index 6)
+ 63  57  77  #  hat skull eyes (band 2), color 1 (index 7)
+ 63  57  77  #  hat skull eyes (band 2), color 2 (index 8)
+ 36  27  40  #  hat skull eyes (band 2), color 3 (index 9)
+ 10   8  11  #  hat skull eyes (band 2), color 4 (index 10)
+#
+253 200  92  #  hat main (band 3), color 0 (index 11)
+245 155  64  #  hat main (band 3), color 1 (index 12)
+245 155  64  #  hat main (band 3), color 2 (index 13)
+190  83  42  #  hat main (band 3), color 3 (index 14)
+130  46  26  #  hat main (band 3), color 4 (index 15)
+#
+100  92 130  #  hat diamond (band 4), color 0 (index 16)
+ 63  57  77  #  hat diamond (band 4), color 1 (index 17)
+ 63  57  77  #  hat diamond (band 4), color 2 (index 18)
+ 36  27  40  #  hat diamond (band 4), color 3 (index 19)
+ 10   8  11  #  hat diamond (band 4), color 4 (index 20)
+#
+ 54 189 162  #  hair (band 5), color 0 (index 21)
+ 54 189 162  #  hair (band 5), color 1 (index 22)
+ 54 189 162  #  hair (band 5), color 2 (index 23)
+ 36  97  97  #  hair (band 5), color 3 (index 24)
+ 23  53  59  #  hair (band 5), color 4 (index 25)
+#
+254 240 210  #  skin main (band 6), color 0 (index 26)
+254 240 210  #  skin main (band 6), color 1 (index 27)
+226 165 116  #  skin main (band 6), color 2 (index 28)
+226 165 116  #  skin main (band 6), color 3 (index 29)
+214 116  76  #  skin main (band 6), color 4 (index 30)
+163  95  78  #  skin main (band 6), color 5 (index 31)
+124  67  65  #  skin main (band 6), color 6 (index 32)
+ 82  49  48  #  skin main (band 6), color 7 (index 33)
+#
+149  99 165  #  eyelids (band 7), color 0 (index 34)
+102  74 123  #  eyelids (band 7), color 1 (index 35)
+ 90  67 113  #  eyelids (band 7), color 2 (index 36)
+ 67  51  85  #  eyelids (band 7), color 3 (index 37)
+ 67  51  85  #  eyelids (band 7), color 4 (index 38)
+#
+246 246 246  #  eye whites (band 8), color 0 (index 39)
+215 236 234  #  eye whites (band 8), color 1 (index 40)
+215 236 234  #  eye whites (band 8), color 2 (index 41)
+193 182 141  #  eye whites (band 8), color 3 (index 42)
+137 130 144  #  eye whites (band 8), color 4 (index 43)
+#
+ 79  66  82  #  eye iris (band 9), color 0 (index 44)
+ 69  52  87  #  eye iris (band 9), color 1 (index 45)
+ 69  52  87  #  eye iris (band 9), color 2 (index 46)
+ 13   0  15  #  eye iris (band 9), color 3 (index 47)
+ 13   0  15  #  eye iris (band 9), color 4 (index 48)
+#
+186 117 189  #  diamond tattoo (band 10), color 0 (index 49)
+186 117 189  #  diamond tattoo (band 10), color 1 (index 50)
+186 117 189  #  diamond tattoo (band 10), color 2 (index 51)
+152  98 160  #  diamond tattoo (band 10), color 3 (index 52)
+108  73 116  #  diamond tattoo (band 10), color 4 (index 53)
+#
+185 229 221  #  lips (band 11), color 0 (index 54)
+ 86 196 166  #  lips (band 11), color 1 (index 55)
+ 86 196 166  #  lips (band 11), color 2 (index 56)
+ 78 141 125  #  lips (band 11), color 3 (index 57)
+ 55 103  91  #  lips (band 11), color 4 (index 58)
+#
+249 244 254  #  teeth (band 12), color 0 (index 59)
+248 243 255  #  teeth (band 12), color 1 (index 60)
+153 141 202  #  teeth (band 12), color 2 (index 61)
+126 115 173  #  teeth (band 12), color 3 (index 62)
+126 115 173  #  teeth (band 12), color 4 (index 63)
+#
+248 209 225  #  mouth (band 13), color 0 (index 64)
+239 185 207  #  mouth (band 13), color 1 (index 65)
+139 104 140  #  mouth (band 13), color 2 (index 66)
+ 99  46  67  #  mouth (band 13), color 3 (index 67)
+ 64  31  44  #  mouth (band 13), color 4 (index 68)
+#
+100  92 130  #  neck strap (band 14), color 0 (index 69)
+ 63  57  77  #  neck strap (band 14), color 1 (index 70)
+ 63  57  77  #  neck strap (band 14), color 2 (index 71)
+ 36  27  40  #  neck strap (band 14), color 3 (index 72)
+ 10   8  11  #  neck strap (band 14), color 4 (index 73)
+#
+254 202  92  #  breast strap diamonds (band 15), color 0 (index 74)
+246 156  64  #  breast strap diamonds (band 15), color 1 (index 75)
+246 156  64  #  breast strap diamonds (band 15), color 2 (index 76)
+230 108  37  #  breast strap diamonds (band 15), color 3 (index 77)
+148  59  42  #  breast strap diamonds (band 15), color 4 (index 78)
+#
+100  92 130  #  breast strap main (band 16), color 0 (index 79)
+ 63  57  77  #  breast strap main (band 16), color 1 (index 80)
+ 63  57  77  #  breast strap main (band 16), color 2 (index 81)
+ 36  27  40  #  breast strap main (band 16), color 3 (index 82)
+ 10   8  11  #  breast strap main (band 16), color 4 (index 83)
+#
+241  85  25  #  dress main (band 17), color 0 (index 84)
+241  85  25  #  dress main (band 17), color 1 (index 85)
+241  85  25  #  dress main (band 17), color 2 (index 86)
+241  85  25  #  dress main (band 17), color 3 (index 87)
+241  85  25  #  dress main (band 17), color 4 (index 88)
+190  50   1  #  dress main (band 17), color 5 (index 89)
+144  31   4  #  dress main (band 17), color 6 (index 90)
+103  23   4  #  dress main (band 17), color 7 (index 91)
+#
+241  85  25  #  dress middle (band 18), color 0 (index 92)
+241  85  25  #  dress middle (band 18), color 1 (index 93)
+241  85  25  #  dress middle (band 18), color 2 (index 94)
+241  85  25  #  dress middle (band 18), color 3 (index 95)
+241  85  25  #  dress middle (band 18), color 4 (index 96)
+190  50   1  #  dress middle (band 18), color 5 (index 97)
+144  31   4  #  dress middle (band 18), color 6 (index 98)
+103  23   4  #  dress middle (band 18), color 7 (index 99)
+#
+253 246 215  #  sleeves cloth (band 19), color 0 (index 100)
+253 246 215  #  sleeves cloth (band 19), color 1 (index 101)
+253 246 215  #  sleeves cloth (band 19), color 2 (index 102)
+253 246 215  #  sleeves cloth (band 19), color 3 (index 103)
+253 246 215  #  sleeves cloth (band 19), color 4 (index 104)
+188 175 107  #  sleeves cloth (band 19), color 5 (index 105)
+134 116  93  #  sleeves cloth (band 19), color 6 (index 106)
+ 92  74  72  #  sleeves cloth (band 19), color 7 (index 107)
+#
+159  71  83  #  sleeves strap (band 20), color 0 (index 108)
+159  71  83  #  sleeves strap (band 20), color 1 (index 109)
+159  71  83  #  sleeves strap (band 20), color 2 (index 110)
+ 52  26  29  #  sleeves strap (band 20), color 3 (index 111)
+ 37  20  28  #  sleeves strap (band 20), color 4 (index 112)
+#
+251 244 213  #  panties (band 21), color 0 (index 113)
+251 244 213  #  panties (band 21), color 1 (index 114)
+251 244 213  #  panties (band 21), color 2 (index 115)
+187 174 106  #  panties (band 21), color 3 (index 116)
+117 102  80  #  panties (band 21), color 4 (index 117)
+#
+254 240 210  #  skin thigh (band 22), color 0 (index 118)
+254 240 210  #  skin thigh (band 22), color 1 (index 119)
+226 165 116  #  skin thigh (band 22), color 2 (index 120)
+226 165 116  #  skin thigh (band 22), color 3 (index 121)
+214 116  76  #  skin thigh (band 22), color 4 (index 122)
+163  95  78  #  skin thigh (band 22), color 5 (index 123)
+124  67  65  #  skin thigh (band 22), color 6 (index 124)
+ 82  49  48  #  skin thigh (band 22), color 7 (index 125)
+#
+253 200  92  #  stockings diamond (band 23), color 0 (index 126)
+245 155  64  #  stockings diamond (band 23), color 1 (index 127)
+245 155  64  #  stockings diamond (band 23), color 2 (index 128)
+190  83  42  #  stockings diamond (band 23), color 3 (index 129)
+130  46  26  #  stockings diamond (band 23), color 4 (index 130)
+#
+100  92 130  #  stockings (band 24), color 0 (index 131)
+ 63  57  77  #  stockings (band 24), color 1 (index 132)
+ 63  57  77  #  stockings (band 24), color 2 (index 133)
+ 36  27  40  #  stockings (band 24), color 3 (index 134)
+ 10   8  11  #  stockings (band 24), color 4 (index 135)
+#
+251 244 213  #  shoes skull (band 25), color 0 (index 136)
+251 244 213  #  shoes skull (band 25), color 1 (index 137)
+251 244 213  #  shoes skull (band 25), color 2 (index 138)
+187 174 106  #  shoes skull (band 25), color 3 (index 139)
+117 102  80  #  shoes skull (band 25), color 4 (index 140)
+#
+100  92 130  #  shoes skull eyes (band 26), color 0 (index 141)
+ 63  57  77  #  shoes skull eyes (band 26), color 1 (index 142)
+ 63  57  77  #  shoes skull eyes (band 26), color 2 (index 143)
+ 36  27  40  #  shoes skull eyes (band 26), color 3 (index 144)
+ 10   8  11  #  shoes skull eyes (band 26), color 4 (index 145)
+#
+254 240 210  #  skin hand (band 27), color 0 (index 146)
+254 240 210  #  skin hand (band 27), color 1 (index 147)
+226 165 116  #  skin hand (band 27), color 2 (index 148)
+226 165 116  #  skin hand (band 27), color 3 (index 149)
+214 116  76  #  skin hand (band 27), color 4 (index 150)
+163  95  78  #  skin hand (band 27), color 5 (index 151)
+124  67  65  #  skin hand (band 27), color 6 (index 152)
+ 82  49  48  #  skin hand (band 27), color 7 (index 153)
+#
+ 83 201 170  #  fingernails (band 28), color 0 (index 154)
+ 83 201 170  #  fingernails (band 28), color 1 (index 155)
+ 83 201 170  #  fingernails (band 28), color 2 (index 156)
+ 54 131 110  #  fingernails (band 28), color 3 (index 157)
+ 33  95  92  #  fingernails (band 28), color 4 (index 158)
+#
+100  92 130  #  wristband (band 29), color 0 (index 159)
+ 63  57  77  #  wristband (band 29), color 1 (index 160)
+ 63  57  77  #  wristband (band 29), color 2 (index 161)
+ 36  27  40  #  wristband (band 29), color 3 (index 162)
+ 10   8  11  #  wristband (band 29), color 4 (index 163)
+#
+255 255 246  #  knives (band 30), color 0 (index 164)
+216 226 227  #  knives (band 30), color 1 (index 165)
+216 226 227  #  knives (band 30), color 2 (index 166)
+123 131 136  #  knives (band 30), color 3 (index 167)
+ 76  83  98  #  knives (band 30), color 4 (index 168)
+#
+238 255 254  #  drool (band 31), color 0 (index 169)
+212 254 252  #  drool (band 31), color 1 (index 170)
+186 250 247  #  drool (band 31), color 2 (index 171)
+159 220 246  #  drool (band 31), color 3 (index 172)
+138 204 242  #  drool (band 31), color 4 (index 173)
+#
+255 142 139  #  blush (band 32), color 0 (index 174)
+248 122 118  #  blush (band 32), color 1 (index 175)
+248 122 118  #  blush (band 32), color 2 (index 176)
+179  48  79  #  blush (band 32), color 3 (index 177)
+148  37  63  #  blush (band 32), color 4 (index 178)
+#
+167 171 172  #  coal (band 33), color 0 (index 179)
+ 20  24  25  #  coal (band 33), color 1 (index 180)
+#
+228 236 247 185  #  diamond(super) (band 34), color 0 (index 181)
+162 172 193 185  #  diamond(super) (band 34), color 1 (index 182)
+ 89  82 178 185  #  diamond(super) (band 34), color 2 (index 183)
+ 89  82 178 185  #  diamond(super) (band 34), color 3 (index 184)
+ 89  82 178 185  #  diamond(super) (band 34), color 4 (index 185)
+#
+120 120 120  #  neko (Lock'n'Load) (band 35), color 0 (index 186)
+#
+167 171 172  #  debris (band 36), color 0 (index 187)
+ 20  24  25   0  #  debris (band 36), color 1 (index 188)
+#
+120 120 120  #  neko (Lock'n'Load) (band 35), color 0 (index 186)
+#
+255 255 255
+255 255 255
+255 255 255
+255 255 255 211
+255 255 255 144
+255 255 255 66
+255 255 255 22
+0 0 0 0

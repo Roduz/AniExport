@@ -1,0 +1,320 @@
+Frames:
+  frames/cerecoptor_dpwP01_colors
+  frames/cerecoptor_dpwP04_colors
+  frames/cerecoptor_dpwP06_colors
+  frames/cerecoptor_dpwP08_colors
+  frames/cerecoptor_dpwP09_colors
+  frames/cerecoptor_dpwP10_colors
+  frames/cerecoptor_dpwP14_colors
+  frames/cerecoptor_dpwP12_colors
+  frames/cerecoptor_dpwP13_colors
+  frames/cerecoptor_dpwP17_colors
+  frames/cerecoptor_dpwP18_colors
+  frames/cerecoptor_dpwP19_colors
+  frames/cerecoptor_dpwP20_colors
+  frames/cerecoptor_dpwP21_colors
+  frames/cerecoptor_dpwP22_colors
+  frames/cerecoptor_dpwP23_colors
+  frames/cerecoptor_dpwP24_colors
+[end]
+
+AllFrames:
+  BlockType = None
+  PhysicsType = PhysicsGround
+  YVel = 0
+
+#  Modifier: X+Slot0=1
+#    Invincible = HighHit + LowHit
+#  [end]
+  
+#  Modifier: X+Slot2=1+NumTouches>0
+#    NoExtent
+#  [end]
+
+  Modifier: X+Slot1=1
+    Slot1 = 0
+    NewHit: 
+      Type: MidHit
+      Spark: 2
+          SoundHash: "Medium"
+      Damage: 250
+      Chip: 20
+      Pause: 2
+      Hitstun: 12
+      Meter: 100/72
+      Ground:
+        # compute x-vel so they come toward us from both sides
+        YVel = A.XPos - XPos
+        YVel = Abs(YVel)
+        YVel -= 200
+        YVel = YVel Max 0  # YVel is now nonzero if they are more than 140 pixels away
+
+        XVel = FacingToAttacker * FacingDir
+        XVel *= 30
+        XVel = 0 IfZero YVel
+        
+        YVel = 0
+
+        FacingDir = FacingToAttacker
+      [end]
+      Air:
+        PhysicsType = PhysicsAir
+
+        # compute y-vel so we go down if behind our attacker
+        YVel = FacingToAttacker * A.FacingDir  # 1 means same dir, -1 means opposite dirs
+        # if facing TO them is the SAME as they way they face, we are behind them
+        XVel = YVel Max 0  # nonzero means behind them
+        YVel = 2  # float them if in front
+        YVel = -10 IfNonZero XVel
+        
+        #override that if we aren't high enough above them
+        XVel = A.YPos
+        XVel = YPos - XVel  # now is how far above them we are
+        XVel -= 140
+        XVel = XVel Max 0
+        YVel = 2 IfZero XVel
+        
+        YVel *= Default(Weight)
+        
+        # compute x-vel so we come toward them from both sides
+        XVel = FacingToAttacker * FacingDir
+        XVel *= 30
+        FacingDir = FacingToAttacker
+      [end]
+    [end] 
+  [end] # modifier
+[end]
+
+Order:
+  Frame:
+    Skipped = 1
+    PT.Superbar += 100/40
+    FacingDir = FacingToEnemy
+    EndHit
+    CounterHit = 1
+    Slot0 = 1  # invincible
+    Slot1 = 0  # not hitting yet
+    Slot2 = 1  # no extent if we've touched something
+    Flag17 = 1  # can kara to command grabs
+  [end]
+  Frame:
+    Number: 1
+    Repeats: 2
+  [end]
+  Frame:
+    Skipped = 1
+    Flag17 = 0  # no more kara command grab
+    Flag15 = 1  # dust cyclone keepalive
+  [end]
+  Frame:
+    Number: 1
+    Repeats: 2
+  [end]
+  Frame:
+    Skipped = 1
+    XPos += 198/2
+  [end]
+  Frame:
+    Number: 2
+    Repeats: 4
+  [end]
+  Frame:
+    Skipped = 1
+    SFX: CerecopterVO
+  [end]
+  Frame:
+    Number: 3
+    Repeats: 3
+  [end]
+  Frame:
+    Number: 4
+    Repeats: 3
+  [end]
+  Frame:
+    Skipped = 1
+    Slot0 = 0  # not invicible anymore
+  [end]
+  Frame:
+    Number: 5
+    Repeats: 3
+  [end]
+  Frame:
+    Skipped = 1
+    XPos += 150/2
+
+    Projectile:
+      Name: Continuous_Cyclone
+      Position: -108 0
+      
+      TetheredTo = 1
+    [end]
+    Projectile:
+      Name: Continuous_Cyclone
+      Position: -108 0
+      Slot0 = 2  # start in the middle
+
+      TetheredTo = 1
+    [end]
+  [end]
+  Frame:
+    Number: 6  # two frames of full extension VULNERABLE before hitting
+    Repeats: 2
+  [end]
+  Frame:
+    Skipped = 1
+    Slot1 = 1  # new hit
+    SFX: GenericWhooshSmall
+  [end]
+  Frame:
+    Number: 6
+    Repeats: 2
+  [end]
+  Frame:
+    Skipped = 1
+    Slot1 = 1  # new hit
+    SFX: GenericWhooshSmall
+  [end]
+  Frame:
+    Number: 7
+    Repeats: 4
+  [end]
+  Frame:
+    Skipped = 1
+    Slot1 = 1  # new hit
+    SFX: GenericWhooshSmall
+  [end]
+  Frame:
+    Number: 8
+    Repeats: 4
+  [end]
+  Frame:
+    Skipped = 1
+    Slot1 = 1  # new hit
+    SFX: GenericWhooshSmall
+  [end]
+  Frame:
+    Number: 9
+    Repeats: 4
+  [end]
+  Frame:
+    Skipped = 1
+    Slot1 = 1  # new hit
+    SFX: GenericWhooshSmall
+  [end]
+  Frame:
+    Number: 7
+    Repeats: 4
+  [end]
+  Frame:
+    Skipped = 1
+    Slot1 = 1  # new hit
+    SFX: GenericWhooshSmall
+  [end]
+  Frame:
+    Number: 8
+    Repeats: 4
+  [end]
+  Frame:
+    Skipped = 1
+    Slot1 = 1  # new hit
+    SFX: GenericWhooshSmall
+  [end]
+  Frame:
+    Number: 9
+    Repeats: 4
+  [end]
+  Frame:
+    Skipped = 1
+    XPos += 78/2
+  [end]
+  Frame:
+    Skipped = 1
+
+    Flag15 = 0  # end dust cyclone
+    
+    SFX: GenericWhoosh
+  
+    NewHit: 
+      Type: MidHit
+      Spark: 3
+          SoundHash: "Hard"
+      Damage: 1350
+      Chip: 300
+      Pause: 12
+      Hitstun: 16
+      Meter: 100/50
+      Ground:
+        PhysicsType = PhysicsAir
+        
+        YVel = 18
+        XVel = -37
+
+        AnimHint = KnockdownAnim
+
+        Pushback = 10
+        PushbackTime = 5
+        PushbackDelta = -1        
+      [end]
+      Air:
+        PhysicsType = PhysicsAir
+        
+        YVel = 18
+        XVel = -37
+
+        AnimHint = KnockdownAnim
+
+        Pushback = 10
+        PushbackTime = 5
+        PushbackDelta = -1
+      [end]
+    [end] 
+
+  [end]
+  Frame:
+    Number: 10
+    Repeats: 4
+  [end]
+  Frame:
+    Number: 11
+    Repeats: 4
+    EndHit
+    CancelOK = 0
+    Slot2 = 0  # always extent from here on
+  [end]
+  Frame:
+    Number: 12
+    Repeats: 4
+  [end]
+  Frame:
+    Number: 13
+    Repeats: 4
+  [end]
+  Frame:
+    Number: 14
+    Repeats: 10
+  [end]
+  Frame:
+    Skipped = 1
+    XPos -= 146/2
+  [end]
+  Frame:
+    Number: 15
+    Repeats: 4
+  [end]
+  Frame:
+    Skipped = 1
+    XPos -= 108/2
+  [end]
+  Frame:
+    Number: 16
+    Repeats: 4
+  [end]
+  Frame:
+    Skipped = 1
+    XPos -= 172/2
+  [end]
+  Frame:
+    Number: 17
+    Repeats: 4
+  [end]
+[end]

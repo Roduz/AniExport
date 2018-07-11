@@ -1,0 +1,130 @@
+Frames:
+  frames/armskip00_colors
+  frames/armskip01_colors
+  frames/armskip02_colors
+  frames/armskip03_colors
+  frames/armskip04_colors
+  frames/armskip05_colors
+  frames/armskip06_colors
+  frames/armskip07_colors
+  frames/armskip08_colors
+  frames/armskip09_colors
+[end]
+
+AllFrames: 
+  BlockType = None
+  Invincible = AllHits
+[end]
+
+Order:
+  Frame:
+    Skipped = 1
+    EndHit
+    CounterHit = 1
+
+    DHCNum = 1 IfZero SuperFlash  # if this is not a DHC, reset DHCNum
+
+    PhysicsType = PhysicsGround
+    YVel = 0
+    XVel *= 1/4
+
+    FacingDir = FacingToEnemy
+    
+    SFX: StopVO
+  [end]
+  Frame:
+    Number: 1
+    Repeats: 3
+  [end]
+  Frame:
+    Number: 2
+    Repeats: 3
+  [end]
+  Frame:
+    Skipped = 1
+    SuperFlash = 1 IfZero SuperFlash
+    PT.SuperBar -= 100
+    #SFX: SuperFlash
+  [end]
+  Frame:
+    Number: 3
+    Repeats: 1
+  [end]
+  Frame:
+    Skipped = 1
+    SuperShadows = 1
+  [end]
+  Frame:
+    Number: 3
+    Repeats: 3
+  [end]
+  Frame:
+    Number: 4
+    Repeats: 4
+  [end]
+  Frame:
+    Skipped = 1
+    
+    FakeSpark = 112  # lv1 super spark
+    Modifier: X+DHCNum>1+DHCNum<3
+      FakeSpark = 113  # lv2
+    [end]
+    Modifier: X+DHCNum>=3
+      FakeSpark = 114  # lv3
+    [end]
+
+    FakeSparkX = 28
+    FakeSparkY = 230
+  [end]
+  Frame:
+    Number: 5
+    Repeats: 5
+  [end]
+  Frame:
+    Number: 6
+    Repeats: 5
+  [end]
+  Frame:
+    Number: 7
+    Repeats: 5
+  [end]
+  Frame:
+    Number: 8
+    Repeats: 12
+  [end]
+  Frame:
+    Number: 9
+    Repeats: 4
+  [end]
+  Frame:
+    Skipped = 1
+    SuperFlash = 0
+    
+    Modifier: X+!E.Thrown+!E.Throwing+DHCNum=1
+      # slightly different because Copter and Slap to Dynamo have to still work, ugh, so 8f when they are in hitstun
+      Skipped = E.StateNum HasTag "Hitstun"  # in this case (Skipped = 1) we want 8
+      Skipped = 8 IfNonZero Skipped # previous default amount of hitpause in Real Game, to allow copter->dynamo and slaps->dynamo to work
+      Skipped = 6 IfZero Skipped  # outside of them being in hitstun, change it to this so it only covers the first active frame!
+      E.Hitpause += Skipped  # extra hitpause on opponent's point
+      Skipped = 1
+    [end]
+  [end]
+  Frame:
+    Skipped = 1
+    SFX: ArmskipVO
+  [end]
+  Frame:
+    Number: 10
+    Repeats: 3
+  [end]
+  Frame:
+    Skipped = 1
+    Slot0 = 12  # frames of invincibility = Slot0
+    Slot1 = 2  # number of loops before ending = Slot1
+    Slot2 = 7 + 1/2  # X velocity = Slot2
+        
+    Flag0 = 1  # first loop, show first hit frame
+    
+    EndHit  # just in case
+  [end]
+[end]

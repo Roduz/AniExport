@@ -1,0 +1,21 @@
+Frames:
+  frames/stabbingpeach12_colors
+[end]
+
+AllFrames: 
+  BlockType = None
+  PhysicsType = PhysicsAir
+[end]
+
+Order:
+  Frame:
+    Skipped = 1
+    CounterHit = 1
+    Weight = 2
+  [end]
+  Frame:
+    Number: 1
+    Repeats: 4
+    Invincible = AllHits
+  [end]
+[end]
