@@ -1,4 +1,4 @@
-//Permission is hereby granted by Brigido Rodriguez to use as is without limitations.
+//Copyright (c) Brigido Rodriguez, all rights reserved.
 #include "../header/texture.h"
 #include "../header/errors.h"
 #include "../header/pcx_file.h"

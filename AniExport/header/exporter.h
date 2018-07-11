@@ -1,4 +1,4 @@
-//Permission is hereby granted by Brigido Rodriguez to use as is without limitations.
+//Copyright (c) Brigido Rodriguez, all rights reserved.
 #ifndef _EXPORTER_H_
 #define _EXPORTER_H_
 

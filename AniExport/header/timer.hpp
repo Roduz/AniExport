@@ -1,4 +1,4 @@
-//Permission is hereby granted by Brigido Rodriguez to use as is without limitations.
+//Copyright (c) Brigido Rodriguez, all rights reserved.
 #ifndef _TIMER_H_
 #define _TIMER_H_
 
